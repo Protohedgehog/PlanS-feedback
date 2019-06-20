@@ -1,11 +1,11 @@
-# Plan S
-R function to automatically download all Plan S feedback files from [Zenodo](https://zenodo.org/record/3250081/). 
+# Plan S feedback files
+The R function below allows you to automatically download all Plan S feedback files from [Zenodo](https://zenodo.org/record/3250081/) at once. 
 
 ### How to download the files
 
 ### Requirements
 
-Before executing the code below you have to create a new R project and manually create an empty folder called 'files' within the project directory. Alternatively, you can simply change the destination paths to match a directory of your choice.
+Before executing the code you have to create a new R project and manually create an empty folder called 'files' within the project directory. Alternatively, you can simply change the destination paths to match a directory of your choice.
 
 ### Create URLs and destination paths
 

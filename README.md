@@ -21,7 +21,7 @@ destinations <- paste0(MAIN_DIR, "/files/", seq, ".pdf")
 
 ### Download feedback files into 'files' folder
 
-Please note that the numbering of the feedback files isn't consecutive, i.e. not all of the URLs created above exist. Hence, `tryCatch()` first checks whether each individual URL exists and `download.file()` then downloads only the existing ones.   
+Please note that the numbering of the feedback files isn't consecutive, i.e. not all of the URLs created above exist. Hence, `tryCatch()` first checks whether each individual URL exists and then `download.file()` only downloads the valid files without throwing errors.   
 
 ```{r}
 # Download files

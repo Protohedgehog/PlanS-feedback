@@ -90,7 +90,7 @@ ggplot() +
   geom_point(data = dots %>% filter(feedback_count >= 1), aes(x = long, y = lat, color = feedback_count), size = 1) + 
   coord_sf(datum = NA, crs = 54009, clip = "on", ylim = c(-50, 90), xlim = c(-160, 170)) +
   scale_color_gradient("Count", low = "darkgreen", high = "green", breaks = c(0, 20, 40, 60)) +
-  labs(title = str_c("Plan S feedback in pixels ", emo::ji("unlock")),
+  labs(title = str_c("Public feedback on Plan S ", emo::ji("unlock")),
        subtitle = str_c("Made with ", emo::ji("pencil"), " from zenodo.org"), 
        caption = "@DataPlanes") +
   map_theme + guides(colour = guide_legend(keywidth = 0.15, keyheight = 0.15, default.unit = "inch", 
